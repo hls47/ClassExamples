@@ -63,8 +63,13 @@
 
 -(IBAction)handleTap:(id)sender;
 {
-    [_inputText resignFirstResponder];
-    [_inputText2 resignFirstResponder];
+//    [_inputText resignFirstResponder];
+//    [_inputText2 resignFirstResponder];
+//    
+    NSArray *subviews = [self.view subviews];
+    for (UITextField *field in subviews) {
+        [field resignFirstResponder];
+    }
 }
 
 
