@@ -61,12 +61,10 @@
 //    
 //}
 
-- (void)handleTap:(UITapGestureRecognizer *)sender
+-(IBAction)handleTap:(id)sender;
 {
-    if (sender.state == UIGestureRecognizerStateEnded)
-    {
-        [_inputText resignFirstResponder];
-    }
+    [_inputText resignFirstResponder];
+    [_inputText2 resignFirstResponder];
 }
 
 

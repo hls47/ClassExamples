@@ -13,6 +13,7 @@
 @property (nonatomic, weak) IBOutlet UILabel *outLabel;
 @property (nonatomic, weak) IBOutlet UITextField *inputText;
 @property (nonatomic, weak) IBOutlet UITextField *inputText2;
-@property (strong, nonatomic) IBOutlet UITapGestureRecognizer *TapAll;
 
+
+-(IBAction)handleTap:(id)sender;
 @end
